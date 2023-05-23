@@ -1,14 +1,17 @@
 :root {
-  --color-noir: #000;
-  --color-gris-noir: #484848;
+  --color-noir1: #000000;
+  --color-noir2: #111111;
+  --color-noir3: #232323;
+  --color-noir4: #343434;
+  --color-noir5: #464646;
+  --color-noir6: #575757;
+  --color-noir7: #696969;
+  --color-noir8: #7A7A7A;
   --color-blanc: #FFF;
-  --color-gris-clair: #ebebeb;
-  --color-gris-clair-hover: #dcdbdb;
-  --color-vert: #7D8A2E;
-  --color-marron: #B8953D;
-  --color-bleu: #44C1B4;
-  --color-rose: #DA90BF;
-  --color-texte: #717171;
+  --color-primaire-violet: #512888;
+  --color-primaire-violet2: #2A1E3E;
+  --color-primaire-violet3: #442860;
+  --color-primaire-violet4: #8D86C9;
 }
 
 @font-face {
@@ -26,17 +29,22 @@
 }
 
 html {
-    font-family: 'Monreal'; 
+    font-family: 'Monreal';
 }
 
 body {
     min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(37,0,154,1) 0%, rgba(29,0,80,1) 75%);
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 h1 {
@@ -63,4 +71,75 @@ i {
 
 img, a {
     -webkit-user-drag: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 5%;
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--color-blanc);
+    z-index: 9999;
+}
+
+header h1 {
+    pointer-events: none;
+    font-size: 30px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.nav_links li i {
+    position: relative;
+    bottom: 0;
+    left: 7px;
+    font-size: 22px;
+}
+
+header nav a {
+    position: relative;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--color-blanc);
+    transition: color .2s ease;
+}
+
+.nav_links li a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-blanc);
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -10px;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+
+.nav_links li a:hover:after {
+    transform: scaleX(90%);
+}
+
+.nav_links li a:hover {
+    color: var(--color-primaire-violet4);
 }
