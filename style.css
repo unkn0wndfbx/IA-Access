@@ -1,0 +1,66 @@
+:root {
+  --color-noir: #000;
+  --color-gris-noir: #484848;
+  --color-blanc: #FFF;
+  --color-gris-clair: #ebebeb;
+  --color-gris-clair-hover: #dcdbdb;
+  --color-vert: #7D8A2E;
+  --color-marron: #B8953D;
+  --color-bleu: #44C1B4;
+  --color-rose: #DA90BF;
+  --color-texte: #717171;
+}
+
+@font-face {
+  font-family: Monreal;
+  src: url(fonts/Montreal-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Monreal';
+}
+
+html {
+    font-family: 'Monreal'; 
+}
+
+body {
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration:none;
+}
+
+h1 {
+    font-size:1.8rem;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size:1.05rem;
+}
+
+i {
+    font-size: 1.3rem;
+}
+
+img, a {
+    -webkit-user-drag: none;
+}
