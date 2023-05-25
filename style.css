@@ -188,7 +188,7 @@ h1.titre_page_accueil {
 }
 
 .introduction_container img {
-    width: 25%;
+    width: 400px;
 }
 
 .intro_button_container {
@@ -338,9 +338,9 @@ hr.accueil {
 }
 
 .titre_pub_abonnement img {
-    width: 95px;
+    width: 90px;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: -10px;
 }
 
@@ -423,17 +423,19 @@ footer .titre_pub_abonnement h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: left;
+    line-height: 1.45;
 }
 footer .titre_pub_abonnement img {
-    top: -20px;
-    right: 15px;
-    width: 85px;
+    top: -7px;
+    right: 20px;
+    width: 80px;
 }
 
 footer p {
     width: 20%;
     font-size: 20px;
     letter-spacing: 1.5px;
+    line-height: 1.3;
 }
 
 .nav_links_footer {
@@ -486,4 +488,91 @@ footer .ligne_social {
 
 footer .ligne_social i {
     font-size: 35px;
+}
+
+/* page formation */
+h1.titre_page_accueil.formation {
+    text-align: left;
+    width: 80%;
+    margin-block: 50px 10px;
+    color: var(--color-blanc);
+    font-size: 40px;
+    letter-spacing: 2.2px;
+    pointer-events: none;
+}
+
+.introduction_container.formation {
+    padding-right: 200px;
+    margin-bottom: 50px;
+}
+
+.introduction_container.formation p {
+    margin-right: 100px;
+}
+
+.introduction_container.formation img {
+    width: 300px;
+}
+
+.container_card {
+    width: 90%;
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-gap: 10px;
+}
+
+.container_card .card {
+    width: 300px;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    color: var(--color-blanc);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: transform .15s ease-out;
+}
+
+.container_card .card img {
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    transition: border-radius .15s ease-out;
+}
+
+.container_card .card h1 {
+    margin-bottom: 15px;
+    color: var(--color-primaire-violet);
+    font-size: 26px;
+    letter-spacing: 2px;
+    pointer-events: none;
+    transition: color .2s .05s ease;
+    text-transform: capitalize;
+}
+
+.container_card .card p {
+    color: var(--color-noir8);
+    font-size: 22px;
+    letter-spacing: .5px;
+    pointer-events: none;
+    transition: color .2s .1s ease;
+}
+
+.container_card .card:hover {
+    transform: scale(1.05);
+}
+
+.container_card .card:hover img {
+    border-radius: 10px;
+}
+
+.container_card .card:hover h1 {
+    color: var(--color-primaire-violet4);
 }
