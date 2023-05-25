@@ -167,7 +167,7 @@ h1.titre_page_accueil {
     width: 80%;
     margin-block: 50px;
     color: var(--color-blanc);
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 2.2px;
     pointer-events: none;
 }
@@ -327,6 +327,7 @@ hr.accueil {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .titre_pub_abonnement h1 {
@@ -337,7 +338,10 @@ hr.accueil {
 }
 
 .titre_pub_abonnement img {
-    width: 130px;
+    width: 95px;
+    position: absolute;
+    right: 10px;
+    top: -10px;
 }
 
 .pub_abonnement {
@@ -407,23 +411,23 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5% 2%;
+    padding: 2%;
     background: none;
     overflow: hidden;
     color: var(--color-blanc);
     border-top: 3px solid var(--color-primaire-violet);
 }
-
 footer .titre_pub_abonnement h1 {
     pointer-events: none;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: left;
 }
-
 footer .titre_pub_abonnement img {
-    width: 100px;
+    top: -20px;
+    right: 15px;
+    width: 85px;
 }
 
 footer p {
