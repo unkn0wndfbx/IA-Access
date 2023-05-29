@@ -46,6 +46,28 @@ body {
     padding-top: 90px;
 }
 
+/* overflow */
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: #c0c0c0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-primaire-violet);
+    border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-noir4);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+/* proprietes universelles */
 a {
     text-decoration: none;
 }
@@ -420,7 +442,7 @@ hr.accueil {
 }
 
 .pub_abonnement_button_container button.pub_abonnement_button {
-    margin-block: 50px;
+    margin-block: 20px 30px;
     padding: 15px 100px;
     border-radius: 5px;
     outline: none;
@@ -443,7 +465,7 @@ hr.accueil {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block: 20px 60px;
+    margin-block: 30px 60px;
 }
 
 .ligne_social i {
