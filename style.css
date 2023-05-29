@@ -269,19 +269,49 @@ h1.titre_abonnement_accueil {
 }
 
 .abonnement_accueil {
-    width: 80%;
-    height: 30vh; /*! à supprimer */
-    padding: 20px;
+    width: 90%;
+    padding: 30px 40px;
     border: 4px solid var(--color-primaire-violet);
     border-radius: 20px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.abonnement_accueil_textes {
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.abonnement_accueil_textes li {
+    list-style: none;
+    margin: 20px;
+    position: relative;
+}
+
+.abonnement_accueil_textes li:last-child {
+    margin-bottom: 0;
+}
+
+li::before {
+    content: url(images/check-solid.svg);
+    display: inline-block;
+    width: 1.25em;
+    position: absolute;
+    left: -30px;
+}
+
+.abonnement_accueil_textes p {
+    color: var(--color-blanc);
 }
 
 .abonnement_accueil_button_container {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     pointer-events: visible;
     display: flex;
     align-items: center;
@@ -312,6 +342,30 @@ h1.titre_avis_clients {
     font-size: 35px;
     letter-spacing: 1.1px;
     pointer-events: none;
+}
+
+.abonnement_accueil.avis_clients {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /*! border: none; */
+}
+
+.abonnement_accueil.avis_clients p {
+    text-align: left;
+    color: var(--color-blanc);
+    margin-right: 80px;
+    line-height: 1.5;
+}
+
+.abonnement_accueil.avis_clients i {
+    margin-bottom: 20px;
+    font-size: 2.7em;
+    color: var(--color-primaire-violet);
+}
+
+.abonnement_accueil.avis_clients p:last-child {
+    margin-right: 0;
 }
 
 hr.accueil {
