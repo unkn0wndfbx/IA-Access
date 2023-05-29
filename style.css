@@ -183,6 +183,15 @@ header nav a:hover {
     color: var(--color-primaire-violet4);
 }
 
+header li.active a {
+    color: var(--color-primaire-violet4);
+}
+
+header li.active a:after {
+    background-color: var(--color-primaire-violet);
+    transform: scaleX(90%);
+}
+
 /* page accueil */
 h1.titre_page_accueil {
     text-align: left;
@@ -210,7 +219,7 @@ h1.titre_page_accueil {
 }
 
 .introduction_container img {
-    width: 400px;
+    width: 350px;
 }
 
 .intro_button_container {
@@ -562,22 +571,8 @@ footer .ligne_social i {
 }
 
 /* page formation */
-h1.titre_page_accueil.formation {
-    text-align: left;
-    width: 80%;
-    margin-block: 50px 10px;
-    color: var(--color-blanc);
-    font-size: 40px;
-    letter-spacing: 2.2px;
-    pointer-events: none;
-}
-
 .introduction_container.formation {
     margin-bottom: 50px;
-}
-
-.introduction_container.formation img {
-    width: 350px;
 }
 
 .container_card {
